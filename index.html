@@ -15,16 +15,22 @@
 
 <body>
     <!-- header-->
-   
-     <header>
-    
-      <a href="#">Dashboard</a>
-        <!--<button id="menu_resp">
-        <svg width="36px" height="36px" viewBox="0 0 48 48">
-            <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
-        </svg>
-        </button>-->
+    <header>
+       <a href="#">Dashboard</a>
+        <ul>
+            <li>
+                <a href="#" >
+                  <span nombre="logout"></span><span>Logout</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" >
+                  <span nombre="mensajes"></span><span> ></span>
+                </a>     
+            </li>
+        </ul>
     </header>
+  
     <div id="menu">
         <button>
             <svg width="36px" height="36px" viewBox="0 0 48 48">
@@ -65,18 +71,18 @@
                     </ul>
                 </li>
             </ul>
-            <ul >
+            <ul>
                 <li >
-                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" >
                         <i class="fa fa-fw fa-envelope"></i>
-                        <span class="d-lg-none">Mensajes
-              <span class="badge badge-pill badge-primary">1 Nuevo Mensaje</span>
+                        <span>Mensajes
+                            <span>1 Nuevo Mensaje</span>
                         </span>
-                        <span class="indicator text-primary d-none d-lg-block">
+                        <span>
               <i class="fa fa-fw fa-circle"></i>
             </span>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+                    <div>
                         <h6 class="dropdown-header">Nuevo Mensaje:</h6>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">
