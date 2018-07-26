@@ -10,27 +10,19 @@ header, nav,#menu{
    background-color: #313d42;
    margin-left: -1em;
 }
-nav,#menu {
-    height: 100%;
-    width: 18.7%;
-    float: left; 
-}
 article{
     margin-right: -2.85px;
     background: white;
     float: right;
     width: 81.72%;
     height: 100%;
+    position: relative;
 }
 header {
     height: 20%;
     padding: 1.5em 1.5em 1em 1.5em;
     margin-right: -0.5em;
     margin-top: -1em;
-}
-
-#menu> button{
-    display:none; /*Ocultar el boton*/
 }
 header >a{
     font-size: 20px;
@@ -40,7 +32,7 @@ header >a{
     font-weight: bold;
     /*color: #71777a;*/
 }
-header >a:link{
+header >a:link, #menu>nav>ul>li>a:link{
     text-decoration: none;
 }
 header ul>li>a{
@@ -49,7 +41,7 @@ header ul>li>a{
     display: inline-block;
     padding-bottom: 5px;
 }
-header ul>li>a>span+span{
+header ul>li>a>span+span, #menu >nav>ul>li>a>span+span{
    /* font-size: 16px;
     color: #ffffff;
     display: inline-block;*/
@@ -81,11 +73,21 @@ span[nombre="mensajes"]{
 }
 span[nombre="logout"]{
     background-image: url(../img/logout.svg);
-    margin-right: 8px;
-    margin-left: 15px;
-   
 }
-span[nombre="mensajes"],span[nombre="logout"]{
+span[nombre="tablas"]{
+    background-image: url(../img/tabla.svg);
+}
+span[nombre="grafico"]{
+    background-image: url(../img/grafico.svg);
+}
+span[nombre="inicio"]{
+    background-image: url(../img/control.svg); 
+}
+span[nombre="componentes"]{
+    background-image: url(../img/conf.svg);
+}
+span[nombre="mensajes"],span[nombre="logout"],span[nombre="tablas"],span[nombre="grafico"]
+,span[nombre="inicio"],span[nombre="componentes"]{
     background-repeat: no-repeat;
     background-size: contain;
     height: 20px;
@@ -94,12 +96,39 @@ span[nombre="mensajes"],span[nombre="logout"]{
     display: inline-block;
     padding-top: 5px;
     margin-bottom: -10px;
-
 }
-span[nombre="mensajes"]:hover,span[nombre="logout"]:hover, header ul>li>a>span+span:hover{
+
+span[nombre="mensajes"]:hover,span[nombre="logout"]:hover, header ul>li>a>span+span:hover, #menu>nav>ul>li>a>span:hover
+{
     color:#0c7bfe !important; 
     fill: #0c7bfe !important;
 
+}
+
+#menu> button{
+    display:none; /*Ocultar el boton*/
+}
+nav{
+    vertical-align: middle; 
+    margin-right: 30px;  
+}
+#menu {
+    float: left; 
+    width: 19.5%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#menu >nav>ul{
+    list-style: none;
+}
+
+.iconosM{
+    font-size:  20px;
+    padding: 25px;
+  
 }
 
 
@@ -113,19 +142,26 @@ span[nombre="mensajes"]:hover,span[nombre="logout"]:hover, header ul>li>a>span+s
     }
    #menu> button {
     position: absolute;
-    top: 2.5%;
-    left: 78%;
-    display:inline-block;
+    top: 1.9%;
+    left: 90%;
+    display: inline-block;
+    float: right;
+    margin: 0px 0px 0px 0px;;
      
+
   
     }/*volvemos a mostrar el botón*/
      #menu nav {/*ahora nuestro menú es una lista flotante*/
        display: none;
+     
+    }
+    #menu{
+        position:inherit;
     }
     #menu >button:focus+nav{
-        position: absolute;
+        position: relative;
        
-        overflow: hidden;
+        /*overflow: hidden;*/
         min-width: 20rem;
         
         
@@ -141,6 +177,7 @@ span[nombre="mensajes"]:hover,span[nombre="logout"]:hover, header ul>li>a>span+s
         margin-left: 10x white;
         margin-right: white 30px;
         float: left;
+        position: initial;
     }
     
                          
@@ -148,6 +185,20 @@ span[nombre="mensajes"]:hover,span[nombre="logout"]:hover, header ul>li>a>span+s
 
 /*Smartphone*/
 @media screen and (max-device-width : 480px) {
-lo
+
+    #menu> button {
+        position: absolute;
+        top: 2%;
+        left: 90%;
+        display: inline-block;
+        float: right;
+        margin: 0px 0px 0px 0px;;
+         
+    
+      
+        }
+}
+@media screen and (max-device-width : 768px) {
+
 
 }
