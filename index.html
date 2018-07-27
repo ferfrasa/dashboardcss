@@ -95,18 +95,17 @@
         </div>
    
         <article>
-            <div >
-       <!-- <div>-->
+            
             <!-- Breadcrumbs-->
-                <section id="navegador">
+            <section id="navegador">
                     <ol>
                         <li>
                             <a href="#">Dashboard </a>
                         </li>
                         <li>/ My Home</li>
                     </ol>
-                </section>
-                <section>
+            </section>
+            <section>
                     <div class="centro">
                         
                         <div tipo="panel">
@@ -158,50 +157,36 @@
             </section>
             <br>
             <!-- Area Chart Example-->
-            <div class="row">
-                <div >
-                    <div >
-                        <div>
-                            <i ></i> Monitor Diario</div>
-                        <div >
-                            <canvas id="monitoring" width="100%" height="40%"></canvas>
-                        </div>
-                        <div class="card-footer small text-muted">Alimentación de 5 minutos durante las últimas 24 horas</div>
+            <section id="chart">            
+              <!--  <div class="row">-->
+                <div id="monitor">
+                    <div>
+                    <div class="titulo">
+                        <span nombre="monitor"></span> Monitor Diario
                     </div>
+                        <div class="" >
+                            <canvas  width="100%" height="80%"></canvas>
+                        </div>
+                    <div><span>Alimentación de 5 minutos durante las últimas 24 horas</span></div>
                 </div>
-                <div class="col-lg-4">
+                </div>
+                <div id="consumo">
+                    <div>
                     <!-- Example Pie Chart Card-->
-                    <div class="card text-center">
-                        <div class="card-header">
-                            <i class="fa fa-pie-chart"></i>Consumo Luz</div>
-                        <div class="card-body">
-                            <canvas id="pielight" width="100%" height="80"></canvas>
-                        </div>
-                        <div class="card-footer small text-muted text-center">Alimentación de 5 minutos durante las últimas 24 horas</div>
+                    <div class="titulo">
+                        <span nombre="consumo"></span>Consumo Luz
                     </div>
-
-                </div>
-            </div>
-
-            <!-- Logout Modal-->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-                        </div>
-                        <div class="modal-body">Seleccionó "Log Out" Esta seguro que desea cerrar sesión</div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                            <a class="btn btn-primary" href="login.html">Logout</a>
-                        </div>
+                    <div>
+                         <canvas width="100%" height="80%"></canvas>
                     </div>
+                    <div><span>Alimentación de 5 minutos durante las últimas 24 horas</span></div>
                 </div>
-            </div>
-          
+                </div>
+            <!--</div>-->
+        </section>
+
+
+         
           
          
           

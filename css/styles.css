@@ -94,8 +94,18 @@ span[nombre="inicio"]{
 span[nombre="componentes"]{
     background-image: url(../img/conf.svg);
 }
+span[nombre="monitor"]{
+    background-image: url(../img/monitor.svg);
+    margin-left: 50px;
+
+}
+span[nombre="consumo"]{
+    background-image: url(../img/consumo.svg);
+    margin-left: 50px;
+    
+}
 span[nombre="mensajes"],span[nombre="logout"],span[nombre="tablas"],span[nombre="grafico"]
-,span[nombre="inicio"],span[nombre="componentes"]{
+,span[nombre="inicio"],span[nombre="componentes"],span[nombre="monitor"], span[nombre="consumo"]{
     background-repeat: no-repeat;
     background-size: contain;
     height: 20px;
@@ -135,7 +145,7 @@ nav{
 #navegador{
     background-color: #eaeced;
     margin-bottom: 15px;
-    margin-left: 5px;
+    margin-left: 15px;
     margin-top: 5px;
     padding: 1px 0px 1px 0px;
 }
@@ -202,7 +212,38 @@ nav{
     padding-right: -0px;
     /*margin-right: -20px;*/
 }
+#monitor,#consumo{
+    display: inline-block;
+    padding: 15px;
+   
+   
+}
+#monitor>div,#consumo>div{
+  background-color: #eaeced;
+  border: 2px solid #e8e6e4;
+  border-radius: 2px;
+}
+#monitor>div>div>{
+    margin-left: 105px;
+}
+#consumo{
+    width: 40%;
 
+}
+#monitor{
+    width:53.5%;
+}
+.titulo{
+    border-bottom: 2px solid #e8e6e4;
+    border-radius: 2px;
+    padding: 10px;
+}
+canvas{
+    background: white;
+    width: 100%;
+    height: 19em;;
+   
+}
 
 
 
