@@ -338,16 +338,6 @@ canvas{
         padding-right: -0px;
         margin-right: -0px;
     } 
-
-   
-  /*  #monitor{
-        width:53.5%;
-    }*/
-   
-   
-    
-
-   /* margin-left: -10px;*/
 }
 
 /*Monitor menor a 800px*/
@@ -363,70 +353,19 @@ canvas{
         top: 1.9%;
         left: 90%;
     }
-  /* #menu> button {
-    position: absolute;
-    top: 1.9%;
-    left: 90%;
-    display: inline-block;
-    float: right;
-    margin: 0px 0px 0px 0px;;
-     
-
-  
-    }/*volvemos a mostrar el botón*/
-    /* #menu nav {/*ahora nuestro menú es una lista flotante*/
-       /*display: none;
-     
-    }
-    #menu{
-        position:inherit;
-    }
-    #menu >button:focus+nav{
-        position: relative;
-       
-        /*overflow: hidden;*/
-      /*  min-width: 20rem;
-        left: 0;
-        display: inline-block !important;
-        background: #121212;
-        min-width: 20rem;*/
-   /* }*/
     article{
         width: 101%;
         margin-left: 10x white;
         margin-right: white 30px;
         float: left;
         position: initial;
-    }
-    
-                         
+    }                      
 }
-
-/*Smartphone*/
-/*@media screen and (max-device-width : 480px) {
-
-    #menu> button {
-        position: absolute;
-        top: 2%;
-        left: 90%;
-        display: inline-block;
-        float: right;
-        margin: 0px 0px 0px 0px;;
-         
-    
-      
-        }
-}
-@media screen and (max-device-width : 768px) {
-
-
-}*/
 @media  (min-width:768px) and (max-width: 1000px) {
     #menu> button {
         top: 0.5%;
         left: 91%;
     }
-
  }
 
  @media  (min-width:1001px) and (max-width: 1024px) {
